@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('loopedbg.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo-title {
+    margin-top: 100px; /* To push it below the nav */
+}
+
+.group-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ddd;
+}
+
+/* Utilities Section */
+#utilities {
+    margin-top: 500px; /* Adjust this to control scroll position */
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slight transparent background */
+}
+
+#utilities h3, #utilities h4 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between button pairs */
+}
+
+.button-pair {
+    display: flex;
+    gap: 20px; /* Space between individual buttons in a pair */
+}
+
+/* Styling for buttons */
+.button {
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    border: 2px solid #00ffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.button:hover::before {
+    left: 0;
+}
+
+.button:hover {
+    color: #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff, 0 0 80px #00ffff;
+}
